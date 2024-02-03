@@ -17,10 +17,10 @@
 <body>
   <main id="main">
     <div id="wrapper" class="w-full h-full flex">
-      <div class="left w-4/12 h-full">
+      <div class="left w-1/2 h-full">
         <img src="./images/bg-main-desktop.png" alt="desktop view background">
       </div>
-      <div class="right w-8/12 h-full"></div>
+      <div class="right w-1/2 h-full"></div>
     </div>
     <div class="container-fluid w-full h-full z-10 fixed top-0 left-0 flex">
       <!-- CARD DETAIL SECTION -->
@@ -38,8 +38,55 @@
       </div>
 
       <!-- FORM SECTION -->
-      <div class="cardForm-section w-1/2 h-full">
+      <div class="cardForm-section w-1/2 h-full flex items-center justify-center">
+        <div class="form">
+          <form class="flex flex-col gap-5">
+            <div class="input-360">
+              <label for="cardHolder-name">CARDHOLDER NAME</label>
+              <input class="input-stlye" type="text" id="cardHolder-name" placeholder="e.g. Jane Appleseed"
+                autocomplete="off">
+              <p class="error-message-empty text-red-400 leading-3 text-sm hidden">Can't be blank</p>
 
+              <label for="card-number">CARD NUMBER</label>
+              <input class="input-stlye" type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000"
+                autocomplete="off" maxlength="19">
+              <p class="error-message-empty text-red-400 leading-3 text-sm hidden">Can't be blank</p>
+              <p class="error-message-short text-red-400 leading-3 text-sm hidden">Number is too short</p>
+            </div>
+
+
+            <div id="bottom-detail" class="grid grid-cols-2 gap-4">
+              <div class="date-detail flex flex-col">
+                <p>EXP. DATE (MM/YY)</p>
+                <div class="head flex gap-2">
+                  <label for="month-detail">
+                    <input class="input-stlye" type="text" id="month-detail" placeholder="MM" autocomplete="off"
+                      maxlength="2">
+                  </label>
+                  <label for="year-detail">
+                    <input class="input-stlye" type="text" id="year-detail" placeholder="YY" autocomplete="off"
+                      maxlength="2">
+                  </label>
+                </div>
+                <p class="error-message-empty text-red-400 leading-4 text-sm hidden">Can't be blank</p>
+                <p class="error-message-short text-red-400 leading-4 text-sm hidden">Number is too short</p>
+              </div>
+              <div class="cvc-detail flex flex-col">
+                <p>CVC</p>
+                <div class="head flex">
+                  <label for="cvc-number">
+                    <input class="input-stlye" type="text" id="cvc-number" placeholder="e.g. 123" autocomplete="off"
+                      maxlength="3">
+                  </label>
+                </div>
+                <p class="error-message-empty text-red-400 leading-4 text-sm hidden">Can't be blank</p>
+                <p class="error-message-short text-red-400 leading-4 text-sm hidden">Number is too short</p>
+              </div>
+            </div>
+
+            <button class="btn py-4 rounded-md">Confirm</button>
+          </form>
+        </div>
       </div>
     </div>
 

@@ -34,6 +34,24 @@
     max-height: 220px;
 }
 
+.input-360 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-stlye:hover,
+.input-stlye:focus {
+    border: 2px solid hsl(278, 94%, 30%);
+}
+
+.input-stlye {
+    padding: 4px 15px;
+    font-size: var(--INPUT-SIZE);
+    border: 2px solid var(--GRAYISH-VIOLET-6);
+    outline: none;
+    border-radius: .3em;
+}
 
 /* GENERAL STYLES */
 html,
@@ -47,4 +65,27 @@ body {
     height: 100vh;
     font-family: var(--PRIMARY-FONT);
     overflow: hidden;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.date-detail input {
+    width: 90px;
+}
+
+.cvc-detail input {
+    width: 188px;
+}
+
+/* Styling button */
+
+.btn {
+    color: var(--WHITE);
+    background: var(--GRAYISH-VIOLET-8);
+}
+
+.errorAnimation {
+    background: var(--RED);
 }
