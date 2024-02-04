@@ -1,5 +1,22 @@
-@media (min-width: 799) {
-    #main {
-        background: #000;
+@media (max-width: 786px) {
+    .container-fluid {
+        flex-direction: column;
+        flex-direction: column;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    #desktop-view-bg {
+        display: none;
+    }
+
+    #mobile-view-bg {
+        display: block;
     }
 }

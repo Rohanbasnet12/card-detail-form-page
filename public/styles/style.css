@@ -51,6 +51,7 @@
     border: 2px solid var(--GRAYISH-VIOLET-6);
     outline: none;
     border-radius: .3em;
+    cursor: pointer;
 }
 
 /* GENERAL STYLES */
@@ -84,6 +85,10 @@ img {
 .btn {
     color: var(--WHITE);
     background: var(--GRAYISH-VIOLET-8);
+}
+
+.btn:hover {
+    background: rgb(56, 7, 56);
 }
 
 .errorAnimation {
