@@ -1,14 +1,31 @@
 @media (max-width: 786px) {
+    #wrapper {
+        flex-direction: column;
+    }
+
     .container-fluid {
         flex-direction: column;
-        flex-direction: column;
     }
 
+    .cardInfo-section {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .top-card {
+        position: relative;
+        top: -94px;
+        left: -80px;
+        z-index: 10;
+    }
+
+    .bottom-card {
+        justify-content: center;
+    }
+
+    .left,
     .right {
-        display: none;
-    }
-
-    .left {
         width: 100%;
     }
 
@@ -18,5 +35,11 @@
 
     #mobile-view-bg {
         display: block;
+        width: 800px;
+        height: 320px;
+    }
+
+    .cardForm-section {
+        width: 100%;
     }
 }
